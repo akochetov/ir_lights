@@ -22,7 +22,7 @@ debuild -uc -us -b
 cd ~/lirc-src
 sudo apt install ./liblirc0_0.10.1-5.2_armhf.deb ./liblircclient0_0.10.1-5.2_armhf.deb ./lirc_0.10.1-5.2_armhf.deb
 
-cd /opt/lights/
+cd /opt/ir_lights/
 sudo cp lirc_options.conf /etc/lirc/lirc_options.conf
 sudo cp lircd.conf /etc/lirc/lircd.conf
 
@@ -32,7 +32,7 @@ sudo apt install -y --allow-downgrades ./liblirc0_0.10.1-5.2_armhf.deb ./liblirc
 export PKG_CONFIG_PATH=~/lirc-src/lirc-0.10.1/
 cd ~/lirc-src/lirc-0.10.1/python-pkg
 sudo python3 setup.py install
-cd /opt/lights/
+cd /opt/ir_lights/
 
 
 echo "Installing git..."

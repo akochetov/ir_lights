@@ -5,8 +5,8 @@ from gpiozero import LED
 socket_path = "/var/run/lirc/lircd"
 
 keys_lights = {
-    "OK": -1,
-    "KEY_1": -1,
+    "KEY_OK": -1,
+    "KEY_1": 17,
     "KEY_2": 27,
     "KEY_3": 22,
     "KEY_4": 14,

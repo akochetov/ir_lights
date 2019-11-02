@@ -12,7 +12,7 @@
 
 case "$1" in
 	start)
-		nohup stdbuf -oL sudo python3 /opt/lights/launcher.py >/opt/lights/log.log 2>&1 &
+		nohup stdbuf -oL sudo python3 /opt/ir_lights/launcher.py >/opt/ir_lights/log.log 2>&1 &
 		;;
 	stop)
 		sudo killall python3
